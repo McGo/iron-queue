@@ -1,11 +1,11 @@
 # IronMQ Laravel Queue Driver
 
-This package provides a IronMQ (~2.0 SDK) driver for the Laravel queue system and matches the driver that was found in Laravel 5.1.
+This package provides a IronMQ (~4.0 SDK) driver for the Laravel queue system and matches the driver that was found in Laravel 5.2.
 
 ## Installation
 
 - Add `Collective\IronQueue\IronQueueServiceProvider::class` to your `app.php` configuration file.
-- Configure your `iron` queue driver in your `config/queue.php` the same as it would have been configured for Laravel 5.1.
+- Configure your `iron` queue driver in your `config/queue.php` the same as it would have been configured for Laravel 5.2.
 
 Sample Configuration:
 
