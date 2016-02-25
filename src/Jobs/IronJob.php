@@ -59,7 +59,10 @@ class IronJob extends Job implements JobContract
      */
     public function fire()
     {
-        $this->resolveAndFire(json_decode($this->getRawBody(), true));
+        $payload = json_decode($this->getRawBody());
+        if (! is_null($payload)) {
+            $this->resolveAndFire(json_decode($this->getRawBody(), true));
+        }
     }
 
     /**
