@@ -107,7 +107,7 @@ class IronJob extends Job implements JobContract
             $this->delete();
         }
 
-        $this->recreateJob($delay);
+        // Do not recreate the job $this->recreateJob($delay);
     }
 
     /**
